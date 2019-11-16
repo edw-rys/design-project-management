@@ -1,0 +1,22 @@
+.panel.files-area
+    .panel-heading.flex.flex-center-y.space-btw
+        .flex.flex-center-y
+            span.icon
+                <i class="fas fa-clipboard-check"></i>
+            h2.title Files Added
+        button.button.disabled Add Files
+    .panel-body
+        if dataFiles
+            ul.ls-none.grid-responsive-2-col
+                each data in dataFiles
+                    li.item-list.flex
+                        .member.flex.space-btw(style="padding:10px 0")
+                            a.flex.flex-center-y(href="#!")
+                                span.part.picture
+                                    img.file(src=data.urlImage, alt="file")
+                                span.part.information=data.title
+                            .flex.flex-center-y
+                                button.part.button-square.dots-info.disabled
+                                    <i class="fas fa-download"></i>
+                                button.part.button-square.dots-info.disabled
+                                    <i class="fas fa-ellipsis-h"></i>

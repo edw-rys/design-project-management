@@ -1,0 +1,20 @@
+.card
+    .card-header-tnx
+        p.card-info-abs.flex.flex-center
+            span.card-info-abs-info
+                span Budget $ 
+                span.budget=card.budget
+        img(src=card.urlImage, alt="alt")
+    .card-body-tnx
+        .info
+            h3.title=card.title
+            p.description.txt-opaque=card.description
+        ul.ls-none.flex.list-users
+            each dataUser in card.users
+                li.list-user
+                    img(src=dataUser.urlImage, alt="alt")
+    .card-foot-tnx.flex.space-btw
+        button(class="button "+card.btnColor) Buy
+        span
+            <i class="fas fa-history"></i>
+            span=card.historyCount

@@ -1,0 +1,73 @@
+.container-fp.grid-fp-rs
+    .panel
+        .panel-heading.flex.flex-center-y.space-btw
+            .flex.flex-center-y
+                span.icon
+                    <i class="fas fa-file"></i>
+                h2.title Files Projects
+            button.button.disabled(style="padding:0 10px") Add Files
+        .panel-body
+            ul.ls-none.grid-3col-no-gap
+                each data in filesUpload
+                    li.item-list.list-square
+                        .flex.space-btw
+                            .circle-min
+                            <i class="fas fa-ellipsis-h"></i>
+                        .picture.flex.flex-center
+                            img(src=data.urlImage, alt="alt")
+                        .foot.flex.flex-center
+                            button.button.disabled(style="margin-right:10px")=data.date
+                            button.button.disabled=data.format
+    .panel
+        .panel-heading.flex.flex-center
+            span.icon
+                <i class="fas fa-cloud-upload-alt"></i>
+            h2.title Browse for files
+        .panel-body
+            .panel-heading.flex.flex-center-y.space-btw
+                h3.title Files
+                a(href="#!")
+                    <i class="fas fa-angle-down"></i>
+            .panel-body
+                p(style="margin:10px 0;display:grid;grid-template-columns:1fr 1fr")
+                    span.txt-opaque Size: 
+                    span 148mb
+                p(style="margin:10px 0;display:grid;grid-template-columns:1fr 1fr")
+                    span.txt-opaque Date: 
+                    span 24 Jun 2018
+                p(style="margin:10px 0;display:grid;grid-template-columns:1fr 1fr")
+                    span.txt-opaque Administrator: 
+                    span Gary E.
+                p(style="margin:10px 0;display:grid;grid-template-columns:1fr 1fr")
+                    span.txt-opaque Modified
+                    span 15 NOV 2019
+            .panel-heading.flex.flex-center-y.space-btw
+                h3.title Labels
+                a(href="#!")
+                    <i class="fas fa-angle-down"></i>
+            .panel-body
+                p(style="margin:10px 0")
+                    span.txt-opaque #github 
+                    span.txt-opaque
+                        <i class="fas fa-check"></i>
+                    span.txt-opaque
+                        <i class="fas fa-times"></i>
+                p(style="margin:10px 0")
+                    span.txt-opaque #HTML 
+                    span.txt-opaque
+                        <i class="fas fa-check"></i>
+                    span.txt-opaque
+                        <i class="fas fa-times"></i>
+                p(style="margin:10px 0")
+                    span.txt-opaque #css 
+                    span.txt-opaque
+                        <i class="fas fa-check"></i>
+                    span.txt-opaque
+                        <i class="fas fa-times"></i>
+                p(style="margin:10px 0")
+                    span.txt-opaque #git 
+                    span.txt-opaque
+                        <i class="fas fa-check"></i>
+                    span.txt-opaque
+                        <i class="fas fa-times"></i>
+                button.button.disabled Add label

@@ -1,0 +1,59 @@
+.table-area
+    .table-responsive
+        .row-table.header
+            .cell 
+                .flex.space-around
+                    span Project
+                    span 
+                        <i class="fas fa-angle-up"></i>
+            .cell 
+                .flex.space-around
+                    span Company
+                    span 
+                        <i class="fas fa-angle-down"></i>
+            .cell 
+                .flex.space-around
+                    span Update
+                    span 
+                        <i class="fas fa-angle-down"></i>
+            .cell 
+                .flex.space-around
+                    span Budget
+                    span 
+                        <i class="fas fa-angle-down"></i>
+            .cell 
+                .flex.space-around
+                    span Marks
+                    span 
+                        <i class="fas fa-angle-down"></i>
+            .cell 
+                .flex.space-around
+                    span Task
+                    span 
+                        <i class="fas fa-angle-down"></i>
+            .cell 
+                .flex.space-around
+                    span Out Date
+                    span 
+                        <i class="fas fa-angle-down"></i>
+        each data in historyProjects
+            .row-table
+                .cell(data-title="Project")
+                    .flex.flex-center-y
+                        img(src=data.user.urlImage, alt="alt",width="40",height="40",style="border-radius:50%")
+                        span= data.user.name
+                .cell(data-title="Company")
+                    .flex.flex-center-y
+                        span= data.company
+                .cell(data-title="Update")
+                    span= data.update
+                .cell(data-title="Budget")
+                    span= data.budget
+                .cell(data-title="Marks")
+                    span= data.marks
+                .cell(data-title="Task")
+                    span 
+                        <i class="fas fa-history"></i>
+                    span= data.task
+                .cell(data-title="Out Date",class="txt-"+data.out.status)
+                    span= data.out.date

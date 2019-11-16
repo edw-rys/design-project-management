@@ -1,0 +1,22 @@
+.panel.members-area
+    .panel-heading.flex.flex-center-y.space-btw
+        .flex.flex-center-y
+            span.icon
+                <i class="fas fa-users"></i>
+            h2.title Members
+        button.button.disabled Add Member
+    .panel-body
+        if dataMembers
+            ul.ls-none
+                each data in dataMembers
+                    li.item-list.flex
+                        .member.flex.space-btw
+                            a.member-item.flex(href="#!").flex-center-y
+                                span.part.picture
+                                    img(src=data.urlProfile, alt="profile")
+                                span.part.user=data.username
+                                span.part.txt-opaque=data.information
+                            .flex.flex-center-y
+                                button.button-square.dots-info.disabled
+                                    <i class="fas fa-ellipsis-h"></i>
+    

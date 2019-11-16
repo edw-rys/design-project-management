@@ -1,0 +1,500 @@
+-let pageTitle = 'Home'
+-let siteName = 'Design Project TNX'
+-let twitterAccount = '@edw_rys'
+-let pageDescription = 'Design Project Managment'
+-let pageImage = ''
+-let instagramAccount= 'ed.rys'
+-
+  let pages = [
+    {
+      title: 'Home',
+      url: '/',
+      child: []
+    },
+    {
+      title: 'About',
+      url: 'about.html',
+      child: [  ]
+    }
+  ]
+-
+  const dataActivity=[
+    {
+      urlUser: 'assets/img/member/edw.jpg',
+      action : 'Add task',
+      time   : '2 min ago',
+      userName: 'edw'
+    },
+    {
+      urlUser: 'assets/img/member/us2.png',
+      action : 'Add task',
+      time   : '2 min ago',
+      userName: 'edw'
+    },
+    {
+      urlUser: 'assets/img/member/us1.jpg',
+      action : 'Add task',
+      time   : '2 min ago',
+      userName: 'edw'
+    },
+    {
+      urlUser: 'assets/img/member/edw.jpg',
+      action : 'Add task',
+      time   : '2 min ago',
+      userName: 'edw'
+    },
+    {
+      urlUser: 'assets/img/member/us2.png',
+      action : 'Add task',
+      time   : '2 min ago',
+      userName: 'edw'
+    },
+    {
+      urlUser: 'assets/img/member/us1.jpg',
+      action : 'Add task',
+      time   : '2 min ago',
+      userName: 'edw'
+    }
+  ];
+-
+  const dataGoals=[
+    {information:'Get Best Advertiser in Your Pocket',isComplete:true},
+    {information:'Get Best Advertiser in Your Pocket',isComplete:true},
+    {information:'Get Best Advertiser in Your Pocket',isComplete:false},
+    {information:'Get Best Advertiser in Your Pocket',isComplete:false}
+  ];
+-
+  const dataProjects = [
+    {information:'Overwier Project'},
+    {information:'Stages'},
+    {information:'Task'},
+    {information:'Message Board'},
+    {information:'Calendar'},
+    {information:'Members'},
+    {information:'Files'},
+    {information:'Activity'}
+  ];
+-
+  const dataMembers=[
+    {
+      urlProfile:'assets/img/member/edw.jpg',
+      username:'edw',
+      information:'Project Manager'
+    },
+    {
+      urlProfile:'assets/img/member/us1.jpg',
+      username:'edw',
+      information:'FrontEnd Developer'
+    },
+    {
+      urlProfile:'assets/img/member/us2.png',
+      username:'edw',
+      information:'UI/UX Designer'
+    },
+    {
+      urlProfile:'assets/img/member/us3.png',
+      username:'edw',
+      information:'Illustrator'
+    }
+  ];
+-
+  const dataFiles =[
+    {
+      urlImage : 'assets/img/files/power-point.png',
+      title: "file.pptx"
+    },
+    {
+      urlImage : 'assets/img/files/word.png',
+      title: "file.pptx"
+    },
+    {
+      urlImage : 'assets/img/files/sketch.png',
+      title: "file.pptx"
+    },
+    {
+      urlImage : 'assets/img/files/pdf.png',
+      title: "file.pptx"
+    }
+  ];
+-
+  const dataBudget=[
+    {
+      title:'title',
+      urlImage: 'assets/img/budget/b1.jpg',
+      budget: 210.2,
+      description:'Description this product',
+      btnColor:'btn-second',
+      users:[
+        {
+          name: '1',
+          urlImage:'assets/img/member/edw.jpg'
+        },
+        {
+          name: '1',
+          urlImage:'assets/img/member/us1.jpg'
+        },
+        {
+          name: '1',
+          urlImage:'assets/img/member/us3.png'
+        }
+      ],
+      historyCount:12
+    },
+    {
+      title:'title',
+      urlImage: 'assets/img/budget/b2.jpg',
+      budget: 220.2,
+      description:'Description this product',
+      btnColor:'btn-third',
+      users:[
+        {
+          name: '1',
+          urlImage:'assets/img/member/us1.jpg'
+        },
+        {
+          name: '1',
+          urlImage:'assets/img/member/us2.png'
+        }
+      ],
+      historyCount:7
+    },
+    {
+      title:'title',
+      urlImage: 'assets/img/budget/b3.jpg',
+      budget: 230.2,
+      description:'Description this product',
+      btnColor:'btn-third',
+      users:[
+        {
+          name: '1',
+          urlImage:'assets/img/member/us3.png'
+        }
+      ],
+      historyCount:6
+    },
+    {
+      title:'title',
+      urlImage: 'assets/img/budget/b4.jpg',
+      budget: 420.2,
+      description:'Description this product',
+      btnColor:'disabled',
+      users:[
+        {
+          name: '1',
+          urlImage:'assets/img/member/us3.png'
+        }
+      ],
+      historyCount:4
+    },
+    {
+      title:'title',
+      urlImage: 'assets/img/budget/b5.jpg',
+      budget: 250.5,
+      description:'Description this product',
+      btnColor:'disabled',
+      users:[
+        {
+          name: '1',
+          urlImage:'assets/img/member/us1.jpg'
+        },
+        {
+          name: '1',
+          urlImage:'assets/img/member/us5.jpg'
+        },
+        {
+          name: '1',
+          urlImage:'assets/img/member/us2.png'
+        },
+        {
+          name: '1',
+          urlImage:'assets/img/member/us3.png'
+        },
+        {
+          name: '1',
+          urlImage:'assets/img/member/us2.png'
+        }
+      ],
+      historyCount:4
+    },
+    {
+      title:'title',
+      urlImage: 'assets/img/budget/b5.jpg',
+      budget: 280.2,
+      description:'Description this product',
+      btnColor:'disabled',
+      users:[
+        {
+          name: '1',
+          urlImage:'assets/img/member/us1.jpg'
+        },
+        {
+          name: '1',
+          urlImage:'assets/img/member/us1.jpg'
+        },
+        {
+          name: '1',
+          urlImage:'assets/img/member/us1.jpg'
+        }
+      ],
+      historyCount:12
+    }
+  ];
+-
+  const dataSections=[
+    {
+      title:'All Projects',
+      isComplete:true
+    },
+    {
+      title:'Design',
+      isComplete:false
+    },
+    {
+      title:'Protected',
+      isComplete:false
+    },
+    {
+      title:'Upload',
+      isComplete:false
+    }
+  ];
+-
+  const historyProjects =[
+      {
+        user:{
+          name: 'Name',
+          urlImage: 'assets/img/member/us2.png'
+        },
+        company: 'Apple Inc.',
+        update: '12 NOV 2019',
+        budget: 1520.1,
+        marks: 5,
+        task: 4,
+        out: {
+          status: 'danger',
+          date:'12 NOV 2019'
+        }
+      },
+      {
+        user:{
+          name: 'Name',
+          urlImage: 'assets/img/member/us3.png'
+        },
+        company: 'Apple Inc.',
+        update: '12 NOV 2019',
+        budget: 1520.1,
+        marks: 5,
+        task: 4,
+        out: {
+          status: 'warning',
+          date:'12 NOV 2019'
+        }
+      },
+      {
+        user:{
+          name: 'Name',
+          urlImage: 'assets/img/member/us1.jpg'
+        },
+        company: 'Apple Inc.',
+        update: '12 NOV 2019',
+        budget: 1520.1,
+        marks: 5,
+        task: 4,
+        out: {
+          status: 'warning',
+          date:'12 NOV 2019'
+        }
+      },
+      {
+        user:{
+          name: 'Name',
+          urlImage: 'assets/img/member/us2.png'
+        },
+        company: 'Apple Inc.',
+        update: '12 NOV 2019',
+        budget: 1520.1,
+        marks: 5,
+        task: 4,
+        out: {
+          status: '',
+          date:'12 NOV 2019'
+        }
+      },
+      {
+        user:{
+          name: 'Name',
+          urlImage: 'assets/img/member/us1.jpg'
+        },
+        company: 'Apple Inc.',
+        update: '12 NOV 2019',
+        budget: 1520.1,
+        marks: 5,
+        task: 4,
+        out: {
+          status: 'warning',
+          date:'12 NOV 2019'
+        }
+      },
+      {
+        user:{
+          name: 'Name',
+          urlImage: 'assets/img/member/edw.jpg'
+        },
+        company: 'Apple Inc.',
+        update: '12 NOV 2019',
+        budget: 1520.1,
+        marks: 5,
+        task: 4,
+        out: {
+          status: '',
+          date:'12 NOV 2019'
+        }
+      },
+      {
+        user:{
+          name: 'Name',
+          urlImage: 'assets/img/member/us2.png'
+        },
+        company: 'Apple Inc.',
+        update: '12 NOV 2019',
+        budget: 1520.1,
+        marks: 5,
+        task: 4,
+        out: {
+          status: '',
+          date:'12 NOV 2019'
+        }
+      },
+      {
+        user:{
+          name: 'Name',
+          urlImage: 'assets/img/member/us3.png'
+        },
+        company: 'Apple Inc.',
+        update: '12 NOV 2019',
+        budget: 1520.1,
+        marks: 5,
+        task: 4,
+        out: {
+          status: '',
+          date:'12 NOV 2019'
+        }
+      },
+      {
+        user:{
+          name: 'Name',
+          urlImage: 'assets/img/member/us1.jpg'
+        },
+        company: 'Apple Inc.',
+        update: '12 NOV 2019',
+        budget: 1520.1,
+        marks: 5,
+        task: 4,
+        out: {
+          status: 'warning',
+          date:'12 NOV 2019'
+        }
+      },
+      {
+        user:{
+          name: 'Name',
+          urlImage: 'assets/img/member/us2.png'
+        },
+        company: 'Apple Inc.',
+        update: '12 NOV 2019',
+        budget: 1520.1,
+        marks: 5,
+        task: 4,
+        out: {
+          status: '',
+          date:'12 NOV 2019'
+        }
+      },
+      {
+        user:{
+          name: 'Name',
+          urlImage: 'assets/img/member/us1.jpg'
+        },
+        company: 'Apple Inc.',
+        update: '12 NOV 2019',
+        budget: 1520.1,
+        marks: 5,
+        task: 4,
+        out: {
+          status: '',
+          date:'12 NOV 2019'
+        }
+      },
+      {
+        user:{
+          name: 'Name',
+          urlImage: 'assets/img/member/edw.jpg'
+        },
+        company: 'Apple Inc.',
+        update: '12 NOV 2019',
+        budget: 1520.1,
+        marks: 5,
+        task: 4,
+        out: {
+          status: '',
+          date:'12 NOV 2019'
+        }
+      }
+  ];
+-
+  const filesUpload =[
+    {
+      urlImage: 'assets/img/files/psd.png',
+      title:'Title',
+      date:'12 NOV 2019',
+      format:'psd (photoshop)'
+    },
+    {
+      urlImage: 'assets/img/files/word.png',
+      title:'Title',
+      date:'12 NOV 2019',
+      format:'docx (word)'
+    },
+    {
+      urlImage: 'assets/img/files/psd.png',
+      title:'Title',
+      date:'12 NOV 2019',
+      format:'psd (photoshop)'
+    },
+    {
+      urlImage: 'assets/img/files/power-point.png',
+      title:'Title',
+      date:'12 NOV 2019',
+      format:'pptx (power point)'
+    },
+    {
+      urlImage: 'assets/img/files/sketch.png',
+      title:'Title',
+      date:'12 NOV 2019',
+      format:'sketch (sketch)'
+    },
+    {
+      urlImage: 'assets/img/files/pdf.png',
+      title:'Title',
+      date:'12 NOV 2019',
+      format:'pdf (pdf)'
+    },
+    {
+      urlImage: 'assets/img/files/psd.png',
+      title:'Title',
+      date:'12 NOV 2019',
+      format:'psd (photoshop)'
+    },
+    {
+      urlImage: 'assets/img/files/word.png',
+      title:'Title',
+      date:'12 NOV 2019',
+      format:'docx (word)'
+    },
+    {
+      urlImage: 'assets/img/files/psd.png',
+      title:'Title',
+      date:'12 NOV 2019',
+      format:'psd (photoshop)'
+    }
+  ];

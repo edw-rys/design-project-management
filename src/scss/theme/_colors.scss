@@ -1,0 +1,50 @@
+$opaque: #BFBFBF;
+$white: #FAF9F9;
+:root{
+    --color-first       : #0379FC;
+    --color-second      : #E64E40;
+    --color-third       : #F0981A;
+    --color-background  : #212735;
+    --color-panel       : #31394C;
+    --color-title       : #ffff;
+    --color-txt         : #ffff;
+    --color-text        : #ffff;
+    --color-opaque      : #BFBFBF;
+}
+// Buttons
+.btn-first{
+    --color-btn: var(--color-first);
+}
+.btn-second{
+    --color-btn: var(--color-second);
+}
+.btn-third{
+    --color-btn: var(--color-third);
+}
+// Text
+h1,h2,h3,h4,h5,h6,.title,.subtitle{
+    color: var(--color-title);
+}
+p,span,a,i{
+    color: var(--color-txt); 
+}
+.color-opaque{
+    --color-txt: var(--color-opaque); 
+}
+
+.disabled{
+    --color-txt: #8C8C8C;
+    --color-border: #8C8C8C;
+}
+.txt-opaque{
+    --color-txt: #BFBFBF;
+}
+.txt-danger{
+    --color-txt: #BE0000;
+}
+.txt-success{
+    --color-txt: #3EC606;
+}
+.txt-warning{
+    --color-txt: #EAE40A;
+}

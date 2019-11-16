@@ -1,0 +1,35 @@
+extends ../config/template
+append config
+  -pageTitle = 'Home'
+  -pageDescription = 'Management Project'
+  -pageImage = ''
+
+block main
+  .main-grid
+    .grid-sections-body
+      .grid-big-body
+        include ../components/banner
+        .panel.description-area
+          .panel-heading.flex.flex-center-y.space-btw
+            .flex.flex-center-y
+              span.icon.color-opaque
+                <i class="fas fa-file"></i>
+              h2.title Project Description
+            button.button.disabled Edit
+          .panel-body
+            p.txt-opaque Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente omnis saepe dicta ut officiis repellat vero rerum pariatur, voluptatibus, quia obcaecati, facere perferendis id! Saepe quae nobis at veniam dolores!
+        include ../components/goalsProject
+        include ../components/members
+        include ../components/files
+        include ../components/listBudget
+        include ../components/tableHistory
+      .grid-right-body
+        include ../components/list-projects
+        - let max=6
+        include ../components/activity
+        include ../components/section
+        - max=3
+        include ../components/activity
+        include ../components/section
+        include ../components/activity
+    include ../components/fileProjects

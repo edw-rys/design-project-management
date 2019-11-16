@@ -1,0 +1,23 @@
+.panel.goals-area
+    .panel-heading.flex.flex-center-y.space-btw
+        .flex.flex-center-y
+            span.icon
+                <i class="fas fa-clipboard-check"></i>
+            h2.title Goals Project
+        button.button.disabled Add Goal
+    .panel-body
+        if dataGoals
+            ul.ls-none
+                each data in dataGoals
+                    li.item-list.flex
+                        .member.flex.space-btw(style="padding:10px 0")
+                            a.flex.flex-center-y(href="#!")
+                                if data.isComplete
+                                    span.part.circle-min.flex.flex-center.btn-first
+                                        <i class="fas fa-check"></i>
+                                else 
+                                    span.circle-min.flex.flex-center.disabled
+                                span.part.information=data.information
+                            .flex.flex-center-y
+                                button.part.button-square.dots-info.disabled
+                                    <i class="fas fa-ellipsis-h"></i>

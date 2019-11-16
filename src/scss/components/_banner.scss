@@ -1,0 +1,55 @@
+.banner{
+    position: relative;
+    background-image: url(../img/banner.jpg);
+    width: 100%;
+    height: 200px;
+    .information{
+        --distance: 0.5em;
+        position: absolute;
+        
+        left: var(--distance);
+        top: var(--distance);
+        @media screen and (min-width: 738px){
+            --distance: 1em;
+            bottom: var(--distance);
+            top: initial;
+        }
+    }
+    .cap{
+        --margin: 10px;
+        position: relative;
+        margin: var(--margin);
+        z-index: 1;
+        @media screen and (min-width: 738px){
+            --margin: 10px;
+        }
+        .icon{
+            font-size: 1.3em;
+            margin: 0 20px;
+        }
+        .detail{
+            color: $white;
+        }
+        .min{
+            margin: 0 40px;
+            color: $opaque;
+        }
+    }
+    .data-foot{
+        position: absolute;
+        bottom: 1em;
+        right: 1em;
+        padding: 10px 15px;
+        background: var(--color-btn);
+        outline: none;
+        border: none;
+        border-radius: 20px;
+    }
+    &::before{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background: rgba($color: #000000, $alpha: 0.4);
+    }
+}

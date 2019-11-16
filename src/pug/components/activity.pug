@@ -1,0 +1,22 @@
+- var count =0
+.panel.panel-primary
+    .panel-heading.flex.space-btw
+        h2.title Recent Activity
+        a(href="#!")
+            <i class="fas fa-angle-down"></i>
+    .panel-body
+        if dataActivity
+            ul.ls-none
+                each data in dataActivity
+                    if(count<max)
+                        li.item-list
+                            a(href="").activity
+                                .picture
+                                    img(src=data.urlUser, alt="alt")
+                                .information-activity
+                                    p.part.user=data.userName
+                                    p.part.action.txt-opaque= data.action
+                                    span.part.time.txt-opaque= data.time
+                    - count++
+    .panel-foot
+        button.button.disabled Show More

@@ -1,0 +1,114 @@
+.grid-responsive-2-col{
+    @media screen and (min-width: 750px){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+.grid-big-body{
+    
+    @media screen and (min-width: 750px){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+    }
+    @media screen and (min-width: 900px){
+        grid-gap: 40px;
+    }
+}
+.list-card-budget{
+    grid-column: span 2;
+    @media screen and (max-width: 750px){
+        margin-bottom: 20px;
+    }
+}
+.description-area{
+    grid-column: span 2;
+    @media screen and (max-width: 750px){
+        margin-bottom: 20px;
+    }
+}
+.banner{
+    grid-column: span 2;
+    @media screen and (max-width: 750px){
+        margin-bottom: 20px;
+    }
+}
+.table-area{
+    grid-column: span 2;
+    @media screen and (max-width: 750px){
+        margin-bottom: 20px;
+    }
+}
+.files-area{
+    grid-column: span 2;
+    @media screen and (max-width: 750px){
+        margin-bottom: 20px;
+    }
+}
+.members-area{
+    @media screen and (max-width: 750px){
+        margin-bottom: 20px;
+    }
+}
+.grid-sections-body{
+    @media screen and (min-width: 750px){
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 20px;
+    }
+    @media screen and (min-width: 900px){
+        grid-gap: 30px;
+    }
+    @media screen and (min-width: 1200px){
+        grid-gap: 40px;
+    }
+
+}
+.main-grid{
+    width: 100%;
+    margin: 0 auto;
+    @media screen and (min-width: 750px){
+        width: 100%;
+    }
+    @media screen and (min-width: 900px){
+        width: 85%;
+    }
+    @media screen and (min-width: 1200px){
+        width: 80%;
+    }
+}
+.grid-responsive-3-col{
+    @media screen and (min-width: 500px){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+    @media screen and (min-width: 900px){
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+    }
+}
+.grid-right-body > .panel{
+    margin-bottom: 50px;
+}
+.grid-3col-no-gap{
+    display: grid;
+    @media screen and (min-width: 500px){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    @media screen and (min-width: 900px){
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+.grid-fp-rs{
+    @media screen and (min-width: 900px){
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+}

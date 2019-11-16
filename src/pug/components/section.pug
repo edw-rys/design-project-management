@@ -1,0 +1,17 @@
+.panel.panel-primary
+    .panel-heading.flex.space-btw(style="padding:20px")
+        button.btn-first.button Save Project
+        button.button.disabled(disabled) Cancel
+    .panel-body
+        if dataSections!=null
+            ul.ls-none
+                each data in dataSections
+                    li.item-list
+                        .member.flex
+                            a.flex.flex-center-y(href="#!")
+                                if data.isComplete
+                                    span.part.circle-min.flex.flex-center.btn-first
+                                        <i class="fas fa-check"></i>
+                                else 
+                                    span.circle-min.flex.flex-center.disabled
+                            a.expec(href="")=data.title

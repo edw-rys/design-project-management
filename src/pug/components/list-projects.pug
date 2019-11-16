@@ -1,0 +1,10 @@
+.panel.panel-primary
+    .panel-heading.flex.space-btw(style="padding:20px")
+        button.btn-first.button Save Project
+        button.button.disabled(disabled) Cancel
+    .panel-body
+        if dataProjects!=null
+            ul.ls-none
+                each data in dataProjects
+                    li.item-list
+                        a.expec(href="#!")=data.information
