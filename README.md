@@ -24,5 +24,5 @@ EDboilerplate es gratis, open source y de la comunidad para la comunidad.
 
 ### Screenshot ⌨️
 
-![alt text](https://raw.githubusercontent.com/edw-rys/design-project-management/master/assets/img/pictures/cap.png)
-![alt text](https://raw.githubusercontent.com/edw-rys/design-project-management/master/assets/img/pictures/cap-mb.png)
+![alt text](https://raw.githubusercontent.com/edw-rys/design-project-management/master/docs/assets/img/cap.png)
+![alt text](https://raw.githubusercontent.com/edw-rys/design-project-management/master/docs/assets/img/cap-mb.png)
